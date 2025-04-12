@@ -1,0 +1,9 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",  // expanded; compressed - чтобы МИНИФИЦИРОВАТЬ файл; compact  
+        "savePath": "/css",    // Папка для CSS
+        "extensionName": ".css"
+      }
+    ]
+  }
