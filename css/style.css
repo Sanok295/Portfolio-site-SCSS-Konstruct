@@ -672,7 +672,7 @@ h4 {
 .projects__item {
   width: 140px;
   height: 224px;
-  background-image: url("../images/projects-bg-2.svg");
+  background-image: url(../images/projects-bg-2.svg);
   background-size: auto;
   background-position: center;
   background-size: cover;
@@ -703,8 +703,8 @@ h4 {
   }
 }
 .projects__item:first-child {
-  background-image: url("../images/projects-bg-1.svg");
+  background-image: url(../images/projects-bg-1.svg);
 }
 .projects__item:last-child {
-  background-image: url("../images/projects-bg-3.svg");
+  background-image: url(../images/projects-bg-3.svg);
 }/*# sourceMappingURL=style.css.map */
