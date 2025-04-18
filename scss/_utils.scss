@@ -18,12 +18,18 @@
 }
 
 .hidden-mobile{
-    @include mobile {
+    @include mobile-above {
         display: none !important;
     }
 }
 .visible-mobile{
-    @include mobile-above {
+    @include fulldesktop {
+        display: none !important;
+    }
+    @include desktop {
+        display: none !important;
+    }
+    @include tablet {
         display: none !important;
     }
 

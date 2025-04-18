@@ -1,8 +1,8 @@
 @mixin fluid-text($max: 48, $min:14, $base-width: 1440){
-    font-size: clamp(#{$min}px, #{$max/$base-width * 100}vw, #{$max}px);
+    font-size: clamp(#{$min}px, calc(#{$max/$base-width * 100})vw, #{$max}px);
 }
 
-@mixin  resrt-link{
+@mixin  reset-link{
     color: inherit;
 
     &,

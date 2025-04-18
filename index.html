@@ -8,6 +8,101 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <header class="face">
+        <div class="face__inner container">
+            <a href="#" class="face__logo logo">
+                <img src="./images/projeco-logo.svg" alt="Konstruct" class="logo__image" width="100" height="20" loading="lazy">
+            </a>
+            <h1 class="face__h1">PARTNER WITH KONSTRUCT</h1>
+            <h4 class="face__h4">An award-winning construction management firm</h4>
+            <a class="face__span" href="#scroll-to-logo">SCROLL DOWN</a>
+        </div>
+    </header>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="#" class="header__logo logo" id="scroll-to-logo">
+                <img src="./images/projeco-logo-black.svg" alt="Konstruct" class="logo__image" width="80" height="20" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">About</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Services</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Work</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger-button-menu burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="content">
+        <section class="section container">
+            <div class="section__header">
+                <h3 class="section__header-h3">Our Story</h3>
+                <div class="section__header-line"></div>
+            </div>
+            <div class="section__body">
+                <div class="hero">
+                    <h2 class="hero__title">Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the number one construction management firm</h2>
+                    <div class="hero__discription">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    </div>
+                </div>
+                <div class="projects">
+                        <div class="projects__item"><span class="projects__item-text">We <br> plan</span></div>
+                        <div class="projects__item"><span class="projects__item-text">We <br> manage</span></div>
+                        <div class="projects__item"><span class="projects__item-text">We <br> build</span></div>
+                </div>
+            </div>
+        </section>
 
+
+
+
+
+
+
+
+
+    </main>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Home</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">About</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Services</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Work</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
 </body>
 </html>

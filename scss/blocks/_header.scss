@@ -1,0 +1,54 @@
+.header{
+    text-transform: uppercase;
+    padding-block: 25px 20px;
+    border-bottom: var(--border);
+    margin-bottom: 57px;
+
+    @include mobile-above{
+        padding: 5px 10px ;
+        margin-bottom: 30px;
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu{
+        font-size: 12px;
+
+        &-list{
+            display: flex;
+            align-items: center;
+            column-gap: 40px;
+        }
+
+        &-link{
+            letter-spacing: 0.1em;
+            position: relative;
+            height: 16px;
+            display: inline-flex;
+            align-items: center;
+
+            @include hover{
+                &::after{
+                    width: 110%;
+                    color: var(--color-accent);
+                }
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition-duration: inherit;
+            }
+        }
+    }
+}

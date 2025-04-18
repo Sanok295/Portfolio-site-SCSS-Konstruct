@@ -1,10 +1,12 @@
 body{
     @include fluid-text(13, 11);
 
+    max-width: 1440px;
+    margin: 0 auto;
     font-family: var(--font-family-base);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    // line-height: 1.7;
     color: var(--color-gray);
     background-color: var(--color-light);
 }
@@ -27,14 +29,15 @@ h1, h2, h3, h4{
 }
 
 h1{
-    @include fluid-text(60, 43)
+    @include fluid-text(60, 43);
+    letter-spacing: 0.1em;
 }
 h2{
-    @include fluid-text(30, 27)
+    @include fluid-text(30, 27);
 }
 h3{
-    @include fluid-text(18, 16)
+    @include fluid-text(18, 16);
 }
 h4{
-    @include fluid-text(16, 14)
+    @include fluid-text(16, 14);
 }

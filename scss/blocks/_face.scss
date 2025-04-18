@@ -1,0 +1,47 @@
+.face{
+    color: var(--color-light);
+    text-align: center;
+    background-image: url(../images/bg-header.svg);
+    background-size: cover;
+    background-position: center;
+
+    &__inner{
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    &__logo{
+        padding-top: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile-above{
+            padding-top: 20px;
+        }
+    }
+
+    &__h1{
+        text-transform: uppercase;
+        padding-top: 300px;
+        font-family: var(--font-family-accent);
+
+        @include mobile-above{
+            padding-top: 150px;
+        }
+    }
+
+    &__h4{
+        letter-spacing: -0.02em;
+    }
+
+    &__span{
+        text-transform: uppercase;
+        padding-block: 200px 70px;
+        letter-spacing: 0.1em;
+
+        @include mobile-above{
+            padding-block: 100px 40px;
+        }
+    }
+}

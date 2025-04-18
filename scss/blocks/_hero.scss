@@ -1,0 +1,52 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 405px;
+
+    @include tablet-above{
+        display: contents;      
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.01em;
+        line-height: 135%;
+
+        @include tablet-above{
+            max-width: 55%;
+            align-self: center;
+            text-align: center;
+            order: -2;  
+        }
+
+        @include mobile-s-above{
+            max-width: 85%;
+        }
+
+        span{
+            color: var(--color-accent);
+            line-height: 135%;
+        }
+    }
+
+    &__discription{
+        line-height: 171%;
+        letter-spacing: 0.01em;
+
+        @include tablet-above{
+            align-self: center;
+            max-width: 60%; 
+        }
+
+        @include mobile-above{
+            max-width: 470px;
+        }
+
+        @include mobile-s-above{
+            max-width: 80%;
+        }
+
+    }
+}
