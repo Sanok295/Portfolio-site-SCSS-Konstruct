@@ -1,0 +1,38 @@
+.capabilities{
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 78px;
+
+        @include mobile-above{
+            flex-direction: column;
+            row-gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        &-left{
+
+            &-h3{
+                margin-bottom: 10px;
+            }
+
+            &-line{
+                margin: 0 auto;
+            }
+        }
+
+        &-center{
+            max-width: 405px;
+            width: 100%;
+            font-size: 11px;
+            margin-inline: auto 30px;
+
+            @include mobile-above{
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
