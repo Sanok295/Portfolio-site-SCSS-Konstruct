@@ -1,0 +1,31 @@
+.order{
+    background-image: url(../images/order-bg.svg);
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    @include mobile-above{
+        height: 300px;
+    }
+
+    &__h2{
+        padding-top: 120px;
+        margin: 0 auto;
+        text-align: center;
+        min-width: 320px;
+        max-width: 350px;
+
+        @include mobile-above{
+            padding-top: 10px;
+        }
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 35px auto 240px;
+    }
+}

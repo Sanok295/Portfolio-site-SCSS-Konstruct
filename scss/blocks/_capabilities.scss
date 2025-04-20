@@ -1,4 +1,9 @@
 .capabilities{
+    margin-bottom: 115px;
+
+    @include mobile-above{
+        margin-bottom: 40px;
+    }
 
     &__header{
         display: flex;

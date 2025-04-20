@@ -10,7 +10,7 @@
 
     @include hover{
         color: var(--color-accent);
-        background-color: transparent;
+        background-color: var(--color-light);
         border: var(--border);
     }
 }
