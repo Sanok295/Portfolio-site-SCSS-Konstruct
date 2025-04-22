@@ -8,37 +8,37 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <header class="face">
+    <header class="face" id="face">
         <div class="face__inner container">
             <a href="#" class="face__logo logo">
                 <img src="./images/projeco-logo.svg" alt="Konstruct" class="logo__image" width="100" height="20" loading="lazy">
             </a>
             <h1 class="face__h1">PARTNER WITH KONSTRUCT</h1>
             <h4 class="face__h4">An award-winning construction management firm</h4>
-            <a class="face__span" href="#scroll-to-logo">SCROLL DOWN</a>
+            <a class="face__span" href="#header">SCROLL DOWN</a>
         </div>
     </header>
-    <header class="header">
+    <header class="header"  id="header">
         <div class="header__inner container">
-            <a href="#" class="header__logo logo" id="scroll-to-logo">
+            <a href="#" class="header__logo logo">
                 <img src="./images/projeco-logo-black.svg" alt="Konstruct" class="logo__image" width="80" height="20" loading="lazy">
             </a>
             <nav class="header__menu hidden-mobile">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Home</a>
+                        <a class="header__menu-link" href="#face">Home</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">About</a>
+                        <a class="header__menu-link" href="#story">About</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Services</a>
+                        <a class="header__menu-link" href="#services">Services</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Work</a>
+                        <a class="header__menu-link" href="#work">Work</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Contact</a>
+                        <a class="header__menu-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -48,7 +48,7 @@
         </div>
     </header>
     <main class="content">
-        <section class="section container">
+        <section class="section container" id="story">
             <div class="section__header">
                 <h3 class="section__header-h3">Our Story</h3>
                 <div class="section__header-line blue-line"></div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="capabilities container">
+        <section class="capabilities container" id="services">
             <div class="capabilities__header">
                 <div class="capabilities__header-left">
                     <h3 class="capabilities__header-left-h3">OUR CAPABILITIES</h3>
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </section>
-        <section class="order">
+        <section class="order" id="work">
             <h2 class="order__h2">Want to build something amazing?</h2>
             <button class="order__button button">GET IN TOUCH</button>
         </section>
@@ -119,7 +119,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-container container">
+        <div class="footer-container container" id="contact">
             <div class="footer__top">
                 <div class="footer__top-company">
                     <span class="footer__top-company-span">COMPANY</span>

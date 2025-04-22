@@ -108,17 +108,21 @@
                     align-items: center;
                 }
 
+                @include mobile-above{
+                    justify-content: space-between;
+                }
+
                 ul{
                     display: flex;
                     flex-direction: column;
                     row-gap: 8px;
 
                     
-                @include tablet{
-                    flex-direction: row;
-                    align-items: center;
+                    @include tablet{
+                        flex-direction: row;
+                        align-items: center;
 
-                }
+                    }
 
                     li{
                         min-width: 120px;

@@ -5,6 +5,12 @@
     border: 0;
     text-transform: uppercase;
     padding: 14px 20px;
+    color: var(--color-light);
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
+    url("/images/bg-header.svg") center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &:modal{ 
         max-width: 100%;
@@ -21,6 +27,33 @@
         flex-direction: column;
         row-gap: 30px;
         min-height: 80vh;
+    }
 
+    &__link{
+        letter-spacing: 0.1em;
+        position: relative;
+        height: 16px;
+        display: inline-flex;
+        align-items: center;
+    
+        @include hover{
+            &::after{
+                width: 100%;
+                color: var(--color-accent);
+            }
+        }
+    
+        &::after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            translate: -50%;
+            width: 0;
+            height: 2px;
+            background-color: currentColor;
+            transition-duration: inherit;
+        }
     }
 }
+
