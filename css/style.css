@@ -549,7 +549,8 @@ h4 {
   text-transform: uppercase;
   padding: 14px 20px;
   color: var(--color-light);
-  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("/images/bg-header.svg") center/cover;
+  background-image: url("/images/bg-header.svg");
+  opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
 }
