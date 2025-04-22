@@ -531,7 +531,7 @@ h4 {
   left: 7px;
   width: 70%;
   height: 2px;
-  background-color: var(--color-gray);
+  background-color: var(--color-light);
   border-radius: 5px;
 }
 .cross-button::before {
@@ -549,7 +549,7 @@ h4 {
   text-transform: uppercase;
   padding: 14px 20px;
   color: var(--color-light);
-  background-image: url("/images/bg-header.svg");
+  background-color: var(--color-gray);
   opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
