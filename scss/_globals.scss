@@ -18,7 +18,9 @@ textarea,
 svg * {
     transition-duration: var(--transition-duration);
 }
-
+ul{
+    padding: 0;
+}
 li{
     list-style-type: none;
 }

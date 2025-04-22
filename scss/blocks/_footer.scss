@@ -1,0 +1,147 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: var(--color-light);
+    background-color: #141a20;
+    text-transform: uppercase;
+
+    &__top{
+        padding-block: 40px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 60px;
+
+        @include tablet{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        @include mobile-above{
+            flex-direction: column;
+            row-gap: 40px;
+        }
+
+        &-company{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            span{
+                font-weight: bold;
+                letter-spacing: 0.08em;
+
+                @include mobile-above{
+                    text-align: center;
+                }
+            }
+
+            &-discription{
+                text-transform: capitalize;
+                width: 250px;
+                line-height: 173%;
+                letter-spacing: 0.08em;
+            }
+        }
+
+        &-links{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2px;
+
+            span{
+                font-weight: bold;
+
+                @include mobile-above{
+                    text-align: center;
+                }
+            }
+
+            &-flex{
+                display: flex;
+                column-gap: 36px;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+
+                    li{
+                        min-width: 80px;
+                    }
+
+                }
+            }
+
+        }
+
+        &-contact{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2px;
+
+            @include tablet{
+                padding-top: 30px;
+            }
+
+            span{
+                font-weight: bold;
+
+                @include tablet{
+                    text-align: center;
+                }
+
+                @include mobile-above{
+                    text-align: center;
+                }
+            }
+
+            &-flex{
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                column-gap: 50px;
+                text-transform: capitalize;
+
+                @include tablet{
+                    align-items: center;
+                }
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+
+                    
+                @include tablet{
+                    flex-direction: row;
+                    align-items: center;
+
+                }
+
+                    li{
+                        min-width: 120px;
+                        width: 120px;
+
+                        @include tablet{
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &-messengers{
+                    padding-top: 10px;
+                    display: flex;
+                    column-gap: 25px;
+                }
+            }
+        }
+
+    }
+
+    &__bottom{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}

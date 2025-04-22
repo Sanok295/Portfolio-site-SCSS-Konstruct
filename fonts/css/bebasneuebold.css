@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'bebasneuebold';
+  src: url('../font/bebasneuebold.eot?32251322');
+  src: url('../font/bebasneuebold.eot?32251322#iefix') format('embedded-opentype'),
+       url('../font/bebasneuebold.woff2?32251322') format('woff2'),
+       url('../font/bebasneuebold.woff?32251322') format('woff'),
+       url('../font/bebasneuebold.ttf?32251322') format('truetype'),
+       url('../font/bebasneuebold.svg?32251322#bebasneuebold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'bebasneuebold';
+    src: url('../font/bebasneuebold.svg?32251322#bebasneuebold') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "bebasneuebold";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-google:before { content: '\f1a0'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
