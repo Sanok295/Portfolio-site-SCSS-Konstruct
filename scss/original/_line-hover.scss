@@ -1,0 +1,13 @@
+@mixin line-hover{
+    &::after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition-duration: inherit;
+    }
+}

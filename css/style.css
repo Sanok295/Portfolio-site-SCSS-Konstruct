@@ -284,8 +284,7 @@ svg * {
 }
 
 body {
-  font-size: clamp(11px, calc(0.9027777778) vw, 13px);
-  max-width: 1440px;
+  font-size: clamp(11px, calc(0.6770833333) vw, 13px);
   margin: 0 auto;
   font-family: var(--font-family-base);
   font-weight: 400;
@@ -320,20 +319,20 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: clamp(43px, calc(4.1666666667) vw, 60px);
+  font-size: clamp(43px, calc(3.125) vw, 60px);
   letter-spacing: 0.1em;
 }
 
 h2 {
-  font-size: clamp(27px, calc(2.0833333333) vw, 30px);
+  font-size: clamp(27px, calc(1.5625) vw, 30px);
 }
 
 h3 {
-  font-size: clamp(16px, calc(1.25) vw, 18px);
+  font-size: clamp(16px, calc(0.9375) vw, 18px);
 }
 
 h4 {
-  font-size: clamp(14px, calc(1.1111111111) vw, 16px);
+  font-size: clamp(14px, calc(0.8333333333) vw, 16px);
 }
 
 .button {
@@ -406,6 +405,7 @@ h4 {
   background-image: url(../images/bg-header.svg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .face__inner {
   display: flex;
@@ -441,6 +441,17 @@ h4 {
   text-transform: uppercase;
   padding-block: 200px 70px;
   letter-spacing: 0.1em;
+  transition: var(--transition-duration);
+}
+@media (hover: hover) {
+  .face__span:hover {
+    transform: scale(1.01);
+  }
+}
+@media (hover: none) {
+  .face__span:active {
+    transform: scale(1.01);
+  }
 }
 @media (max-width: 768px) {
   .face__span {
@@ -951,6 +962,9 @@ h4 {
 .input__span {
   font-size: 22px;
   color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .field {

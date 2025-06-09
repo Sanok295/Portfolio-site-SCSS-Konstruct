@@ -4,6 +4,7 @@
     background-image: url(../images/bg-header.svg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     &__inner{
         @include flex-center;
@@ -39,6 +40,11 @@
         text-transform: uppercase;
         padding-block: 200px 70px;
         letter-spacing: 0.1em;
+        transition: var(--transition-duration);
+
+        @include hover{
+            transform: scale(1.01);
+        }
 
         @include mobile-above{
             padding-block: 100px 40px;
