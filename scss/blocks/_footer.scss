@@ -72,6 +72,12 @@
                     }
 
                 }
+
+                &-link{
+                    position: relative;
+                    @include line-hover;
+                }
+
             }
 
         }
@@ -127,6 +133,8 @@
                     li{
                         min-width: 120px;
                         width: 120px;
+                        position: relative;
+                        transition: var(--transition-duration);
 
                         @include tablet{
                             text-align: center;
@@ -138,6 +146,22 @@
                     padding-top: 10px;
                     display: flex;
                     column-gap: 25px;
+
+                    a{
+                        transition: var(--transition-duration);
+
+                        @include hover{
+                            transform: scale(1.2);
+                            color: var(--color-accent);
+                        }
+                    }
+                }
+
+                &-link{
+                    @include hover{
+                        transform: scale(1.05);
+                        color: var(--color-accent);
+                    }
                 }
             }
         }

@@ -10,4 +10,11 @@
         background-color: currentColor;
         transition-duration: inherit;
     }
+
+    @include hover{
+        &::after{
+            width: 110%;
+            color: var(--color-accent);
+        }
+    }
 }

@@ -7,11 +7,16 @@
         row-gap: 20px;
     }
 
-    input{
+    &__input{
         display: flex;
         width: 250px;
         height: 40px;
         margin-left: auto;
+
+        &:focus{
+            outline: 2px solid transparent;
+            box-shadow: 0 0 0 0.5px var(--color-accent);
+        }
     }
 
     &__button{

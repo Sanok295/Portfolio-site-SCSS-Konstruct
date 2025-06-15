@@ -31,15 +31,7 @@
             display: inline-flex;
             align-items: center;
 
-            @include hover{
-                &::after{
-                    width: 110%;
-                    color: var(--color-accent);
-                }
-            }
-
             @include line-hover;
-
         }
     }
 }
